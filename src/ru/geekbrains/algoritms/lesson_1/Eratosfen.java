@@ -18,7 +18,7 @@ public class Eratosfen {
             if (arr[i]!=-1) {
                 primeNumber=arr[i];
                 System.out.println(primeNumber);
-                for (int j = i; j < arr.length; j+=primeNumber) {
+                for (int j = i+primeNumber; j < arr.length; j+=primeNumber) {
                         arr[j]=-1;
                 }
                 counter++;
